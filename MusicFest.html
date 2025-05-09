@@ -29,57 +29,43 @@
     <div class="container">
         <div class="card">
             <h3>Standard</h3>
-            <p>&49</p>
+            <p style="background-color: rgb(16, 16, 16); margin-left:40px">&49</p>
             <button class="buy">Buy Now</button>
         </div>
 
         <div class="card">
             <h3>VIP</h3>
-            <p>&99</p>
+            <p style="background-color: rgb(16, 16, 16); margin-left:40px">&99</p>
             <button class="buy">Buy Now</button>
         </div>
 
         <div class="card">
             <h3>Backstage</h3>
-            <p>&149</p>
+            <p style="background-color: rgb(16, 16, 16); margin-left:40px">&149</p>
             <button class="buy">Buy Now</button>
         </div>
     </div>
 
+
     <section>
-        <div class="Main">
-            <div class="header" onclick="toggleDropdown(this)">
-                <span class="menu-icon">🔻</span>
-                <h3 class="head">No Outside Food</h3>
-            </div>
-            <p class="para">Please refrain from bringing outside food or beverages to ensure safety and hygiene.</p>
-        </div>
-    
-        <div class="Main">
-            <div class="header" onclick="toggleDropdown(this)">
-                <span class="menu-icon">🔻</span>
-                <h3 class="head">Re-entry Policy</h3>
-            </div>
-            <p class="para">No re-entry allowed once you've exited the festival grounds.</p>
-        </div>
-    
-        <div class="Main">
-            <div class="header" onclick="toggleDropdown(this)">
-                <span class="menu-icon">🔻</span>
-                <h3 class="head">Photography</h3>
-            </div>
-            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cumque.</p>
-        </div>
-    </section>
+        <details>
+          <summary>No Outside Food</summary>
+          <p>Please refrain from bringing outside food or beverages to ensure safety and hygiene.</p>
+        </details>
+      
+        <details>
+          <summary>Re-entry Policy</summary>
+          <p>No re-entry allowed once you've exited the festival grounds.</p>
+        </details>
+      
+        <details>
+          <summary>Photography</summary>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cumque.</p>
+        </details>
+      </section>
 
-    <script>
-        function toggleDropdown(header) {
-            const mainDiv = header.parentElement;
-            mainDiv.classList.toggle('active');
-        }
-    </script>
 
-    <footer>
+    <footer class="footer">
         <h2>Follow Us</h2>
     </footer>
 </body>
