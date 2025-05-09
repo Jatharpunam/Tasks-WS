@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .container1 {
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+            background-color: white;
+            padding: 40px;
+            margin: 25px auto;
+            height: 600px;
+            border: 2px solid rgb(213, 203, 203);
+            border-width: 5px;
+        }
+
+        .container1 div {
+            margin-bottom: 15px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+    <form>
+        <div class="container1">
+            <div class="head">
+                <h1>Register</h1>
+                <p>Kindly fill in this form to register.</p>
+
+            </div>
+            <div class="header">
+                <label for="username"><b>Username</b></label><br>
+                <input class="input" type="text" placeholder="Enter username" name="username" id="username" required>
+            </div>
+            <div class="header">
+                <label for="email"><b>Email</b></label><br>
+                <input class="input" type="text" placeholder="Enter Email" name="email" id="email" required>
+            </div>
+
+            <div class="header">
+                <label for="pwd"><b>Password</b></label><br>
+                <input class="input" type="password" placeholder="Enter Password" name="pwd" id="pwd" required>
+            </div>
+
+            <div class="header">
+                <label for="pwd-repeat"><b>Repeat Password</b></label><br>
+                <input class="input" type="password" placeholder="Repeat Password" name="pwd-repeat" id="pwd-repeat"
+                    required>
+            </div>
+
+            <div class="BTN">
+                <button type="submit">Register</button>
+
+                <div class="footer1">
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <form class="Main">
+        <div class="container2">
+            <div class="leftDiv">
+                <h1>Welcome Back!</h1>
+                <p>Provid Your personal details to use all <br> features</p>
+                <button class="button">SIGN IN</button>
+            </div>
+
+            <div class="rightDiv">
+                <h1>Register With</h1>
+                <div class="icon">
+                    <i class="fab fa-google"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <h2>OR</h2>
+                <p>Fill Out The Following Info For Registration</p>
+
+                <div class="sign-up">
+
+                    <input class="input" type="text" placeholder="Name" name="email" id="email" required>
+                </div>
+
+                <div class="sign-up">
+                    <input class="input" type="email" placeholder="Email" name="email" id="email" required>
+                </div>
+
+                <div class="sign-up">
+
+                    <input class="input" type="password" placeholder="Password" name="pwd" id="pwd" required>
+                </div>
+
+                <button class="register">SIGN UP</button>
+
+            </div>
+        </div>
+
+    </form>
+
+    <section class="login">
+        <div class="log-form">
+            <div class="log-head">
+                <h1>Login Form</h1>
+            </div>
+            <div class="BUTTON">
+                <button class="pink-BTN">Login</button>
+                <button class="white-Btn">Signup</button>
+            </div>
+            <div class="log">
+                <input class="input" type="email" placeholder="Email Address" name="email" id="email" required>
+            </div>
+
+            <div class="log">
+
+                <input class="input" type="password" placeholder="Password" name="pwd" id="pwd" required>
+            </div>
+            <h3>Forgot Password?</h3>
+
+            <button class="login-BTN">Login</button>
+            <p>Not a remember? <a href="#">Signup Now.</a></p>
+        </div>
+    </section>
+
+    <section>
+        <form>
+            <div class="registration">
+                <h1>Registration</h1>
+
+
+                <label class="custom-radio">
+                    <input type="radio" name="accountType" value="personal" checked>
+                    <span class="checkmark">✓</span>
+                    Personal
+                </label>
+                <label class="custom-radio">
+                    <input type="radio" name="accountType" value="company">
+                    <span class="checkmark">✓</span>
+                    Company
+                </label>
+
+                <div class="inputGroup">
+
+                    <div class="register-ip">
+                        <i class="fa fa-envelope icon"></i>
+                        <input class="input-field" type="text" placeholder="Email" name="email">
+
+                    </div>
+
+                    <div class="register-ip">
+                        <i class="fa fa-user icon"></i>
+                        <input class="input-field" type="name" placeholder="Name" name="name">
+                    </div>
+
+                    <div class="register-ip">
+                        <i class="fa fa-key icon"></i>
+                        <input class="input-field" type="password" placeholder="Password" name="psw">
+                    </div>
+
+                    <!-- <label for="gender">Select  Gender</label> -->
+                    <div class="gender">
+                        <label class="custom-radio">
+                            <input type="radio" name="gender" value="female" checked>
+                            <span class="checkmark">✓</span>
+                            Female
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="gender" value="male">
+                            <span class="checkmark">✓</span>
+                            Male
+                        </label>
+                    </div>
+
+                </div>
+                <div class="footer">
+                    <p class="left">By clicking Register, you <br> agree on our <a href="#"> terms and <br>
+                            conditions.</a></p>
+                    <button class="right">Register</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <form>
+            <div class="container">
+                <div>
+                    <h1>Registration</h1>
+                    <h2>Personal Details</h2>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

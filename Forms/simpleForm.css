@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(228, 227, 227);
+}
+
+.registerForm{
+    width: 40%;
+    margin: 20px auto;
+    border: 1px solid gray;
+    padding: 20px;
+    background-color: rgb(226, 240, 255);
+}
+
+.registerForm h1, p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.FormDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputGroup{
+    display: flex;
+    gap: 25px;
+}
+.inputGroup .label1{
+    gap: 50px;
+}
+
+/*.inputGroup label{
+    flex: 1;
+}
+
+.inputGroup input{
+    flex: 2;
+} */
+
+input[type="text"]:focus{
+    background-color: blue;
+}
+
+.footer input {
+        margin-right: 10px; 
+        width: 12%;
+        height: 25px;
+    }
