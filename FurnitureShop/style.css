@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav1 {
+    position: sticky;
+    top: 0;
+
+}
+
+.mainDiv {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.logoBrand,
+.navList,
+.logSearch {
+    padding-top: 20px;
+}
+
+.logoBrand {
+    float: left;
+    padding-left: 20px;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.navList {
+    display: flex;
+    list-style-type: none;
+    /* margin-left: 60px; */
+}
+
+.navItem {
+    display: flex;
+    margin: 3px 15px;
+}
+
+.navLink:link {
+    color: black;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.navLink:visited {
+    color: black;
+
+}
+
+.logSearch {
+    padding-right: 30px;
+}
+
+
+/* header Section */
+.header{
+    height: 400px;
+    width: 100%;
+    background-image: url("https://www.shutterstock.com/image-illustration/laptop-flying-furniture-shopping-online-260nw-2236966119.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom:  50px;
+}
+.header h2{
+    padding: 50px 0 0 50px;
+}
+.header p{
+    padding: 30px 0 0 50px;
+}
+.orangeBTN {
+    background-color: orange;
+    color: white;
+    font-weight: 200;
+    border: none;
+    text-decoration: none;
+    padding: 9px;
+    margin: 40px 10px 0 50px;
+    height: 30px;
+    width: 100px;
+}
+
+.greenBTN {
+    background-color: green;
+    color: white;
+    font-weight: 200;
+    border: none;
+    text-decoration: none;
+    padding: 9px;
+    height: 30px;
+    width: 100px;
+}
+
+
+.Iframe{
+   width: 30%;
+   height: 300px;
+}
+
+/* productList section */
+.prodMain {
+    width: 80%;
+    margin: 10px auto;
+}
+.prodMain h4{
+    margin: 50px 0 20px 50px;
+}
+.prodMain h3{
+    margin: 0px 0 10px 0px;
+}
+
+.prodMain p{
+    padding: 0 0 30px 50px;
+}
+
+.prodList {
+    display: flex;
+    height: 400px;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: rgb(240, 238, 238);
+    width: 18rem;
+    height: 350px;
+}
+
+.imgCard {
+    width: 100%;
+    height: 80%;
+}
+
+.titleCard {
+    color: rgb(38, 141, 151);
+    /* margin-bottom: 10px; */
+    text-align: center;
+
+}
+
+.priceAndBTN {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutUs {
+    width: 80%;
+    height: 300px;
+    display: flex;
+}
+
+.aboutUsMain {
+    flex: 2
+} 
+
+.aboutUsMain img {
+    width: 70%;
+    height: 100%;
+    margin: 0px 0 0 200px;
+}
+
+.headerAboutus {
+    flex: 1;
+}
+.headerAboutus h1, p{
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+.blog{
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+.blogBtn{
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.contactUs {
+    height: 500px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.contactUs img {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: black;
+    height: 300px;
+    color: white;
+}
+.column .col a:link,
+.column .col a:visited
+{
+    color: white;
+}
+.commonFooter {
+    display: flex;
+    width: 80%;
+    margin: 5px auto;
+    padding-top: 20px;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+}
+
+.call:hover,
+.email:hover,
+.location:hover {
+    color: #ff0000;
+}
+
+.imgInFooter {
+    width: 60px;
+    height: 60px;
+}
+
+.contactFormFooter p {
+    font-size: xx-large;
+}
+
+.customIcon:hover {
+    color: red;
+}
+
+footer p {
+    text-align: center;
+}
+
+.topArrow {
+    width: 70px;
+    position: sticky;
+    left: 95%;
+    bottom: 30px;
+    border: 3px ridge rgb(128, 128, 128);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.top {
+    color: black;
+    text-decoration: none;
+}
