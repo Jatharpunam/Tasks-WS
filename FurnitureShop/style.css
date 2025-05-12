@@ -62,6 +62,8 @@ body {
 
 .logSearch {
     padding-right: 30px;
+    display: flex;
+    gap: 20px;
 }
 
 
@@ -93,7 +95,7 @@ body {
 }
 
 .greenBTN {
-    background-color: green;
+    background-color: rgb(46, 141, 46);
     color: white;
     font-weight: 200;
     border: none;
@@ -101,8 +103,12 @@ body {
     padding: 9px;
     height: 30px;
     width: 100px;
+    margin-right: 150px;
+    margin-bottom: 5px;
 }
-
+.col-icon{
+    margin-right: 110px;
+}
 
 .Iframe{
    width: 30%;
@@ -115,14 +121,14 @@ body {
     margin: 10px auto;
 }
 .prodMain h4{
-    margin: 50px 0 20px 50px;
+    margin: 50px 0 20px 74px;
 }
 .prodMain h3{
     margin: 0px 0 10px 0px;
 }
 
 .prodMain p{
-    padding: 0 0 30px 50px;
+    padding: 0 0 30px 74px;
 }
 
 .prodList {
@@ -186,20 +192,49 @@ body {
     margin-top: 10px;
 }
 .contactUs {
-    height: 500px;
+    height: 450px;
     width: 90%;
-    margin: 50px auto;
+    margin: 10px auto;
+    display: flex;
+     margin-top: 70px;
 }
 
-.contactUs img {
-    width: 100%;
-    height: 500px;
-    margin-top: 20px;
+.leftDiv{
+    flex: 2;
+    margin-left: 350px;
+    margin-top: 40px;
+}
+.leftDiv h3{
+    margin-bottom: 20px;
+}
+.leftDiv input{
+    margin-bottom: 15px;
+    height: 30px;
+    padding-left: 5px;
+     width: 70%;
+}
+.leftDiv .msg{
+    height: 50px;
+}
+.sendBTN{
+    background-color: rgb(102, 102, 187);
+    width: 15%;
+    height: 30px;
+    color: white;
+    border: none;
+}
+.rightDiv{
+    flex: 1;
+    margin-right: 200px;
+}
+.rightDiv iframe{
+    width: 500px;
+    height: 400px;
 }
 
 .footer {
     background-color: black;
-    height: 300px;
+    height: 350px;
     color: white;
 }
 .column .col a:link,
@@ -218,6 +253,25 @@ body {
     flex: 1;
     text-align: center;
 }
+.links{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto auto; 
+    gap: 10px 20px; 
+}
+.column h3{
+    margin-bottom: 15px;
+}
+.links a{
+      color: white;
+      text-decoration: none;
+}
+.column .col1{
+    margin-left: 130px;
+}
+.column .col2{
+    margin-right: 80px;
+}
 
 .call:hover,
 .email:hover,
@@ -233,6 +287,13 @@ body {
 .contactFormFooter p {
     font-size: xx-large;
 }
+.email{
+    margin-right: 30px;
+    width: 50%;
+    height: 30px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
 
 .customIcon:hover {
     color: red;
@@ -240,6 +301,15 @@ body {
 
 footer p {
     text-align: center;
+}
+.call{
+    margin-left: 100px;
+}
+.location{
+    margin-right: 30px;
+}
+.end{
+    margin-top: 20px;
 }
 
 .topArrow {
