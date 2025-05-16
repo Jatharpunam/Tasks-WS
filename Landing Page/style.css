@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+     padding-top: 120px;
+}
+
+.nav1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(35, 35, 36); 
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(35, 35, 36);
+    font-size: 20px;
+    padding: 30px;
+    align-items: center;
+    color: white;
+    padding-left: 45px;
+}
+
+.navList {
+    display: flex;
+    list-style-type: none;
+}
+
+.navItem {
+    margin: 3px 15px;
+}
+
+.navLink {
+    color: white;
+    /* font-size: larger; */
+    text-decoration: none;
+}
+
+.mainHeader {
+    display: flex;
+    background-color: rgb(192, 208, 216);
+    width: 100%;
+    height: 300px;
+    padding: 35px;
+    /* margin: 20px; */
+
+}
+
+.leftInfo {
+    margin-right: 550px;
+    /* text-align: center; */
+    padding-top: 40px;
+
+}
+
+.btn {
+    background-color: rgb(28, 158, 147);
+    width: 25%;
+    height: 35px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.img {
+    height: 200px;
+    padding-top: 20px;
+}
+
+.features {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.featureList {
+    width: 100%;
+    height: 70px;
+    /* background-color: rgb(177, 198, 206); */
+    /* margin: 20px; */
+}
+
+.List {
+    border: none;
+    background-color: rgb(210, 229, 232);
+    font-size: 18px;
+    padding: 17px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-left: 5px solid green;
+    border-radius: 7px;
+}
+
+.user {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.say {
+    background-color: rgb(211, 217, 219);
+    width: 100%;
+    height: 250px;
+    padding: 35px;
+}
+
+.say_BTN {
+    border-left: 5px solid rgb(55, 71, 107);
+    height: 50px;
+    margin: 5px;
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 25px;
+    border-radius: 5px;
+}
+ 
+
+footer{
+    background-color: rgb(104, 137, 137);
+    color: white;
+    padding: 40px 20px 20px;
+    font-size: 14px;
+}
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-info, 
+.footer-form{
+    flex: 1 1 300px;
+}
+
+.footer-info h3,
+.footer-formh3{
+    margin-bottom: 15px;
+    color: rgb(177, 177, 177);
+    font-size: 20px;
+}
+
+.footer-info p{
+    margin: 8px 0;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-info i{
+    margin-right: 10px;
+    /* color: rgb(72, 18, 119); */
+}
+
+.footer-form form{
+    display: flex;
+    flex-direction: column;
+}
+.footer-form input,
+.footer-form textarea{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-form button{
+    padding: 10px;
+    background-color: rgb(65, 215, 125);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-form h3{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    /* margin-right: 20px; */
+}
+.footer-form button:hover{
+    background-color: rgb(51, 198, 51);
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid rgb(196, 182, 182);
+    padding-top: 15px;
+    color: rgb(62, 62, 61);
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1024px) {
+    .mainHeader {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        text-align: center;
+        margin-top: 120px;
+    }
+
+    .leftInfo {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .rightInfo .img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    .btn {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+
+    .navList {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navItem {
+        margin: 10px 0;
+    }
+
+    .btn {
+        width: 60%;
+    }
+
+    .featureList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        height: auto;
+    }
+
+    .List {
+        padding: 12px;
+        font-size: 16px;
+        width: 80%;
+        margin: 5px 0;
+    }
+
+    .say {
+        height: auto;
+        padding: 20px;
+    }
+    .say_BTN {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-form input,
+    .footer-form textarea,
+    .footer-form button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .leftInfo h1 {
+        font-size: 24px;
+    }
+
+    .leftInfo p {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .List {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+    .say_BTN {
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+
+    .say {
+        padding: 15px;
+    }
+
+    .footer-info, .footer-form {
+        flex: 1 1 100%;
+    }
+
+    .footer-form h3 {
+        font-size: 18px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}
