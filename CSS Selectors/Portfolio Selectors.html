@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+
+    /* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Type Selector */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* ID Selector */
+#main-header {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Class Selector */
+.navList li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.navList a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.navList a:hover {
+  text-decoration: underline;
+}
+
+/* Descendant Selector */
+section h2 {
+  margin-bottom: 10px;
+  color: #444;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.about p{
+    margin-left: 10px;
+}
+
+/* Project */
+.project {
+  background: white;
+  padding: 15px;
+  margin: 10px;
+  border-left: 5px solid teal;
+}
+
+/* Attribute Selector */
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px 20px;
+  background: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #006666;
+}
+
+
+footer {
+  background: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+  </style>
+</head>
+<body>
+
+  <header id="main-header">
+    <h1 class="name">Punam Jathar</h1>
+    <nav>
+      <ul class="navList">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a frontend developer passionate about UI design and web accessibility.</p>
+  </section>
+
+  <section id="projects" class="projectDiv">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>Responsive portfolio built with HTML and CSS.</p>
+    </div>
+    <div class="project">
+      <h3>To-Do App</h3>
+      <p>Simple to-do list with local storage.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Punam Jathar</p>
+  </footer>
+
+</body>
+</html>
