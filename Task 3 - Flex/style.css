@@ -210,16 +210,15 @@ footer {
     }
 
     .navList {
-        flex-direction: column;
-        width: 100%;
+        width: 50%;
     }
 
     .navItem {
-        width: 100%;
+        width: 40%;
     }
 
     .navItem .navLink:hover {
-        background-color: #666;
+        background-color: #ffc4c4;
     }
 
     .searchBox {
