@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List and Table</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- task-1 : Lists -->
+  <section class="task-1">
+    <h1>HTML Lists</h1>
+    <div class="list">
+      <div class="fruits-list">
+        <h2>Fruits</h2>
+        <ol>
+          <li>Apple</li>
+          <li>Mango</li>
+          <li>Orange</li>
+        </ol>
+      </div>
+
+      <div class="vegetables-list">
+        <h2>Vegetables</h2>
+        <ol class="vegetables-list-items">
+          <li>Potato</li>
+          <li>Tomato</li>
+          <li>Onion</li>
+        </ol>
+      </div>
+
+      <div class="groceries-list">
+        <h2>Groceries</h2>
+        <ol class="groceries-list-items">
+          <li>Rice</li>
+          <li>Flour</li>
+          <li>Pulses</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="nested-links">
+    <h2>Some of my favorite links</h2>
+    <ul>
+      <li>Social Networking
+        <ul>
+          <li><a href="#">digg</a></li>
+          <li><a href="#" class="diff-color">reddit</a></li>
+          <li><a href="#">stumbleupon</a></li>
+        </ul>
+      </li>
+      <li>Reference
+        <ul>
+          <li><a href="#" class="diff-color">google</a></li>
+          <li><a href="#">wikipedia</a></li>
+          <li><a href="#">dictionary</a></li>
+        </ul>
+      </li>
+      <li>Web development
+        <ul>
+          <li>XHTML/CSS
+            <ul>
+              <li><a href="#">w3 schools</a></li>
+              <li><a href="#">htmlHelp</a></li>
+              <li><a href="#">CSS Zen Garden</a></li>
+            </ul>
+          </li>
+
+          <li>Programming/CSS
+            <ul>
+              <li><a href="#">javascript.com</a></li>
+              <li><a href="#">php.net</a></li>
+              <li><a href="#">mysql.com</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <!-- task-2 : Table -->
+  <section>
+    <table class="device-specs-table">
+      <thead>
+        <tr>
+          <th>Device</th>
+          <th>Brand</th>
+          <th>Specifications</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Smartphone</td>
+          <td>Apple</td>
+          <td>
+            <table class="device-details-table">
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Storage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>iPhone 12 Pro</td>
+                  <td>256GB</td>
+                </tr>
+                <tr>
+                  <td>iPhone SE</td>
+                  <td>128GB</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>Laptop</td>
+          <td>HP</td>
+          <td>15.6" Display</td>
+        </tr>
+        <tr>
+          <td>Tablet</td>
+          <td>Samsung</td>
+          <td>10.5" Display</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="pricing-table">
+    <table>
+      <thead>
+        <tr>
+          <th>BASIC<br><span class="pricing">$30 /MO</span></th>
+          <th class="popular">POPULAR<br><span class="pricing">$60 /MO</span></th>
+          <th>PREMIER<br><span class="pricing">$90 /MO</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="highlight">256MB</span> Memory</td>
+          <td class="popular"><span class="highlight">512MB</span> Memory</td>
+          <td><span class="highlight">1024MB</span> Memory</td>
+        </tr>
+        <tr>
+          <td><span class="highlight">1</span> User</td>
+          <td class="popular"><span class="highlight">3</span> Users</td>
+          <td><span class="highlight">5</span> Users</td>
+        </tr>
+        <tr>
+          <td><span class="highlight">1</span> Website</td>
+          <td class="popular"><span class="highlight">5</span> Websites</td>
+          <td><span class="highlight">10</span> Websites</td>
+        </tr>
+        <tr>
+          <td><span class="highlight">1</span> Domain</td>
+          <td class="popular"><span class="highlight">7</span> Domains</td>
+          <td><span class="highlight">10</span> Domains</td>
+        </tr>
+        <tr>
+          <td><span class="highlight">Unlimited</span> Bandwidth</td>
+          <td class="popular"><span class="highlight">Unlimited</span> Bandwidth</td>
+          <td><span class="highlight">Unlimited</span> Bandwidth</td>
+        </tr>
+        <tr>
+          <td><span class="highlight">24/7</span> Support</td>
+          <td class="popular"><span class="highlight">24/7</span> Support</td>
+          <td><span class="highlight">24/7</span> Support</td>
+        </tr>
+        <tr>
+          <td><button class="select-btn">SELECT</button></td>
+          <td class="popular"><button class="select-btn">SELECT</button></td>
+          <td><button class="select-btn">SELECT</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- task-3: Mini Project -->
+  <div class="container1">
+    <h1>🍽️ Welcome to Foodie's Hub</h1>
+    <!-- Menu Section -->
+    <section class="menu">
+      <h2>Our Menu</h2>
+      <hr>
+      <div class="menu-category">
+        <h3>Starters</h3>
+        <ol>
+          <li>Tomato Soup</li>
+          <li>Spring Rolls</li>
+          <li>Garlic Bread</li>
+        </ol>
+      </div>
+
+      <div class="menu-category">
+        <h3>Main Course</h3>
+        <ol>
+          <li>Paneer Butter Masala</li>
+          <li>Veg Biryani</li>
+          <li>Dal Makhani</li>
+        </ol>
+      </div>
+
+      <div class="menu-category">
+        <h3>Desserts</h3>
+        <ol>
+          <li>Gulab Jamun</li>
+          <li>Ice Cream</li>
+          <li>Rasmalai</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Reservation Table -->
+    <section class="reservations">
+      <h2>Reservation Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Table #</th>
+            <th>Guest Name</th>
+            <th>Time</th>
+            <th>Guests</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Raj Malhotra</td>
+            <td>7:00 PM</td>
+            <td>2</td>
+            <td>Confirmed</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Anita Sharma</td>
+            <td>7:30 PM</td>
+            <td>4</td>
+            <td>Confirmed</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Mohit Verma</td>
+            <td>8:00 PM</td>
+            <td>3</td>
+            <td style="background-color: red;">Pending</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Sneha Kapoor</td>
+            <td>8:30 PM</td>
+            <td>5</td>
+            <td>Confirmed</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+
+</html>
